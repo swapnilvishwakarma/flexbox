@@ -13,10 +13,11 @@
             /* flex-flow: row wrap; */
             /* justify-content: space-evenly;
             align-items: center; */
-            background-color: lightgreen;
+            background: lightgreen;
             /* height: 100vh;
             align-content: center; */
             width: 600px;
+            height: 100vh;
         }
         .item {
             background: lightcoral;
@@ -37,12 +38,12 @@
 </head>
 <body>
     <div id="container">
-        <div class="item" style="flex-grow: 1;">Item 1</div>
-        <div class="item" style="flex-grow: 5;">Item 2</div>
-        <div class="item" style="flex-shrink: 1;">Item 3</div>
-        <!-- <div class="item">Item 4</div>
-        <div class="item">Item 5</div>
-        <div class="item" style="flex-shrink: 8;">Item 6</div> -->
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item" style="align-self: baseline;">Item 3</div>
+        <div class="item">Item 4</div>
+        <!-- <div class="item">Item 5</div>
+        <div class="item">Item 6</div> -->
     </div>
 </body>
 </html>
