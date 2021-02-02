@@ -10,35 +10,39 @@
             /* flex-direction: row;
             flex-wrap: wrap; */
             /* main axis is row => cross axis is vertical */
-            flex-flow: row wrap;
+            /* flex-flow: row wrap; */
             /* justify-content: space-evenly;
             align-items: center; */
             background-color: lightgreen;
             /* height: 100vh;
             align-content: center; */
+            width: 600px;
         }
         .item {
             background: lightcoral;
             padding: 30px;
             margin: 10px;
             text-align: center;
+            /* flex-basis: 120px; */
+            /* 0 (flex-grow) to begin with, 1 is for flex-shrink, auto is for flex-basis (width) */
+            flex: 0 1 auto;
         }
 
-        .order {
+        /* .order { */
             /* By default order is set to 0 */
-            order: -1;
-        }
+            /* order: -1; */
+        /* } */
 
     </style>
 </head>
 <body>
     <div id="container">
-        <div class="item">Item 1</div>
-        <div class="item order">Item 2</div>
-        <div class="item">Item 3</div>
-        <div class="item">Item 4</div>
+        <div class="item" style="flex-grow: 1;">Item 1</div>
+        <div class="item" style="flex-grow: 5;">Item 2</div>
+        <div class="item" style="flex-shrink: 1;">Item 3</div>
+        <!-- <div class="item">Item 4</div>
         <div class="item">Item 5</div>
-        <div class="item">Item 6</div>
+        <div class="item" style="flex-shrink: 8;">Item 6</div> -->
     </div>
 </body>
 </html>
